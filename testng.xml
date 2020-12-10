@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="MyTeam11 - Android" verbose="1">
+    <!-- suite name="Suite Name" -->
+    <test name="LoginDetails" allow-return-values="true">
+        <!-- packagename.Testcase class name -->
+        <classes>
+            <class name="testClass.singinAction">
+                <methods>
+                    <include name="blanklogin"/><!-- Enter Method which you want to Run -->
+                    <include name="SuccessfullyLogin"/>
+                </methods>
+            </class>
+
+            <class name="testClass.joinContestImpementation">
+                <methods>
+                    <include name="createJoinPrivateContest"/><!-- Enter Method which you want to Run -->
+                    <include name="joinContestCodeUsingCode"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>
